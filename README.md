@@ -83,14 +83,20 @@ While using popular cloud storage tools, I noticed two major gaps:
 
 ## 🛠 Tech Stack
 
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=nextjs,nodejs,postgres,vercel" height="30" />
+  <img src="https://skillicons.dev/icons?i=js,ts" height="30" />
+  <img src="https://skillicons.dev/icons?i=react" height="30" />
+</p>
+
 | Layer         | Tools Used                                       |
 |---------------|--------------------------------------------------|
-| Frontend      | Next.js, HeroUI                                  |
-| Auth          | Clerk                                            |
-| Backend       | Node.js, Next.js (API routes)                    |
-| Database      | Neon (PostgreSQL), Drizzle ORM                   |
-| File Storage  | ImageKit CDN                                     |
-| Deployment    | Vercel (Frontend), Neon (DB), ImageKit (Media)   |
+| **Frontend**      | [Next.js](https://nextjs.org/), [HeroUI](https://www.heroui.dev/)                          |
+| **Auth**          | [Clerk](https://clerk.dev/)                                        |
+| **Backend**       | Node.js, Next.js (API routes)                    |
+| **Database**      | [Neon PostgreSQL](https://neon.tech/), [Drizzle ORM](https://orm.drizzle.team/)             |
+| **File Storage**  | [ImageKit CDN](https://imagekit.io/)                                   |
+| **Deployment**    | [Vercel](https://vercel.com/) (Frontend), Neon (DB), ImageKit (Media)   |
 
 
 ---
@@ -112,11 +118,81 @@ While using popular cloud storage tools, I noticed two major gaps:
 git clone https://github.com/ArshTiwari2004/MyDrive.git
 cd MyDrive
 
+
 # Install dependencies
 npm install
 # or
 yarn install
 # or
 pnpm install
+```
+
+Create a .env.local file in the root directory:
+
+```bash
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+# ImageKit
+NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
+IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
+NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT=your_imagekit_url_endpoint
+
+# Clerk URLs
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
+
+# Fallback URLs
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+
+# App URL
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# Database
+DATABASE_URL=your_neon_database_url
+```
+
+
+Running the Application
+
+```bash
+# Development
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+Building for Production
+
+```bash
+# Build the application
+npm run build
+# or
+yarn build
+# or
+pnpm build
+
+# Start the production server
+npm start
+# or
+yarn start
+# or
+pnpm start
+```
+
+
+## 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
+
+
+
+
 
 
