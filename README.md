@@ -30,8 +30,6 @@ Inspired by cloud storage platforms, but designed to solve real-world pain point
 
 While using popular cloud storage tools, I noticed two major gaps:
 
-
-
 > While platforms like Google Drive and Dropbox are popular, they fail to address some critical UX and backend limitations.  
 > MyDrive focuses on solving **real-world user pain points** with clear **technical innovations**.
 
@@ -79,7 +77,9 @@ While using popular cloud storage tools, I noticed two major gaps:
 
 ---
 
+## So what is Mydrive ?
 
+MyDrive is a lightweight, modern file storage application designed to address key limitations found in mainstream cloud platforms. Built from scratch using technologies like Next.js, Clerk, Drizzle ORM, Neon (PostgreSQL), and ImageKit, it emphasizes backend functionality over flashy UI. MyDrive offers features such as secure user authentication, efficient file uploads, smart file organization with tags, instant file previews, and an intelligent trash system with auto-deletion logic. It’s built for users who want a clean, reliable, and transparent file management experience.
 
 ## 🛠 Tech Stack
 
